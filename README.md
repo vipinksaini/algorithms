@@ -5,30 +5,7 @@
 
 ![image](https://github.com/vipinksaini/algorithms/assets/34277960/8ea09fee-190d-44e8-87d9-7f784753fc25)
 
-#In C++:
-
-int solution(int N, int K)
-{
-    int div = N;
-    int count = 0;
-    while (1)
-    {
-        int qu = K / div;
-        if (qu > 0)
-        {
-            K = K - div;
-            count++;
-        }
-        div--;
-        if (div < 1 || K < 1)
-            break;
-    }
-    if (K >= 1)
-        return -1;
-    else
-        return count;
-}
-
+#In C++: MinGlass.cpp
 
 
 
